@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { HeaderComponent } from "../layouts/header/header.component";
 
 @Component({
@@ -9,5 +9,5 @@ import { HeaderComponent } from "../layouts/header/header.component";
   styleUrl: './home.component.scss'
 })
 export class HomeComponent {
-
+  message = signal('Hello World');
 }

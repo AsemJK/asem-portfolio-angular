@@ -1,0 +1,32 @@
+nav{
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    .logo{
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    ul{
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        gap: 25px;
+
+        li{
+            a{
+                color: white;
+                text-decoration: none;
+                &:hover{
+                    color: #f10022;
+                }
+                :active{
+                    color: #f10022;
+                }
+            }
+
+        }
+    }
+
+}
