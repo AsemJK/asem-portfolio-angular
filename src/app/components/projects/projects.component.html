@@ -1,10 +1,6 @@
 <div class="projects" *ngIf="projects().length > 0">
   @for (project of projects(); track project.id) {
-  <div class="project" (click)="projectDetails(project)">
-    <img [src]="project.imageUrl" alt="">
-    <h2>{{ project.name }}</h2>
-    <p>{{ project.description }}</p>
-  </div>
+  <app-project [project]="project" (selectedProject)="projectDetails($event)"></app-project>
   }
 </div>
 <div *ngIf="projects().length == 0">

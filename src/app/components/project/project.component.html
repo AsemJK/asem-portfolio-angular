@@ -1,1 +1,5 @@
-<p>project works!</p>
+<div appProjectTypeTheme [projectType]="project().type" class="project" (click)="this.selectProject()">
+  <img [src]="project().imageUrl" alt="">
+  <h2>{{ project().name }}</h2>
+  <p>{{ project().description }}</p>
+</div>

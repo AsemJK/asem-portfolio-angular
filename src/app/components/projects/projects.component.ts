@@ -3,11 +3,12 @@ import { ProjectsService } from '../../services/projects.service';
 import { Project } from '../../models/project.type';
 import { catchError } from 'rxjs';
 import { NgIf } from '@angular/common';
+import { ProjectComponent } from '../project/project.component';
 
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [NgIf],
+  imports: [NgIf, ProjectComponent],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.scss'
 })
@@ -26,7 +27,9 @@ export class ProjectsComponent implements OnInit {
         this.projects.set(data.projects);
       });
   }
+
   projectDetails(project: Project) {
     console.log(project);
   }
+
 }

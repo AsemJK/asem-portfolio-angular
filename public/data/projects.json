@@ -2,6 +2,7 @@
   "projects": [
     {
       "id": 1,
+      "type": "desktop",
       "name": "Portfolio",
       "description": "This is my portfolio",
       "imageUrl": "images/projects/portfolio.jpg",
@@ -10,6 +11,7 @@
     },
     {
       "id": 2,
+      "type": "web",
       "name": "Project 2",
       "description": "This is my second project",
       "imageUrl": "images/projects/project2.jpg",
@@ -18,6 +20,7 @@
     },
     {
       "id": 3,
+      "type": "web",
       "name": "Project 3",
       "description": "This is my third project",
       "imageUrl": "images/projects/project3.jpg",
@@ -26,6 +29,7 @@
     },
     {
       "id": 4,
+      "type": "web",
       "name": "Project 4",
       "description": "This is my fourth project",
       "imageUrl": "images/projects/project4.jpg",
@@ -34,6 +38,7 @@
     },
     {
       "id": 5,
+      "type": "web",
       "name": "Project 5",
       "description": "This is my fifth project",
       "imageUrl": "images/projects/project5.jpg",
@@ -42,6 +47,7 @@
     },
     {
       "id": 6,
+      "type": "web",
       "name": "Project 6",
       "description": "This is my sixth project",
       "imageUrl": "images/projects/project6.jpg",
