@@ -4,7 +4,47 @@
       "id": 1,
       "name": "Portfolio",
       "description": "This is my portfolio",
-      "imageUrl": "assets/images/portfolio.png",
+      "imageUrl": "images/projects/portfolio.jpg",
+      "githubUrl": "",
+      "liveUrl": "https://www.google.com"
+    },
+    {
+      "id": 2,
+      "name": "Project 2",
+      "description": "This is my second project",
+      "imageUrl": "images/projects/project2.jpg",
+      "githubUrl": "",
+      "liveUrl": "https://www.google.com"
+    },
+    {
+      "id": 3,
+      "name": "Project 3",
+      "description": "This is my third project",
+      "imageUrl": "images/projects/project3.jpg",
+      "githubUrl": "",
+      "liveUrl": "https://www.google.com"
+    },
+    {
+      "id": 4,
+      "name": "Project 4",
+      "description": "This is my fourth project",
+      "imageUrl": "images/projects/project4.jpg",
+      "githubUrl": "",
+      "liveUrl": "https://www.google.com"
+    },
+    {
+      "id": 5,
+      "name": "Project 5",
+      "description": "This is my fifth project",
+      "imageUrl": "images/projects/project5.jpg",
+      "githubUrl": "",
+      "liveUrl": "https://www.google.com"
+    },
+    {
+      "id": 6,
+      "name": "Project 6",
+      "description": "This is my sixth project",
+      "imageUrl": "images/projects/project6.jpg",
       "githubUrl": "",
       "liveUrl": "https://www.google.com"
     }

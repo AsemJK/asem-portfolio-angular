@@ -2,11 +2,12 @@ import { Component, OnInit, signal } from '@angular/core';
 import { ProjectsService } from '../../services/projects.service';
 import { Project } from '../../models/project.type';
 import { catchError } from 'rxjs';
+import { NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [],
+  imports: [NgIf],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.scss'
 })
@@ -23,8 +24,9 @@ export class ProjectsComponent implements OnInit {
     )
       .subscribe((data: any) => {
         this.projects.set(data.projects);
-        console.log(this.projects);
       });
   }
-
+  projectDetails(project: Project) {
+    console.log(project);
+  }
 }
