@@ -5,5 +5,5 @@ export type Project = {
   description: string;
   imageUrl: string;
   githubUrl: string;
-  projectUrl: string;
+  liveUrl: string;
 }

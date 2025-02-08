@@ -1,0 +1,12 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "name": "Portfolio",
+      "description": "This is my portfolio",
+      "imageUrl": "assets/images/portfolio.png",
+      "githubUrl": "",
+      "liveUrl": "https://www.google.com"
+    }
+  ]
+}

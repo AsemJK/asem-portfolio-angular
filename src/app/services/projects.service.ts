@@ -1,14 +1,18 @@
-import { Injectable, signal } from '@angular/core';
+import { inject, Injectable, signal } from '@angular/core';
 import { Project } from '../models/project.type';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProjectsService {
-  projects = signal<Array<Project>>([]);
+  projects = Array<Project>();
+  dataUrl = 'data/projects.json';
   constructor() { }
+  http = inject(HttpClient);
 
   getProjects() {
-    return this.projects;
+    //retrieve data from json file '../data/projects.js'
+    return this.http.get<any>(this.dataUrl);
   }
 }
