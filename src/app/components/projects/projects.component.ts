@@ -4,6 +4,7 @@ import { Project } from '../../models/project.type';
 import { catchError } from 'rxjs';
 import { NgIf } from '@angular/common';
 import { ProjectComponent } from '../project/project.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-projects',
@@ -14,7 +15,7 @@ import { ProjectComponent } from '../project/project.component';
 })
 export class ProjectsComponent implements OnInit {
   projects = signal(new Array<Project>());
-  constructor(private ProjectsService: ProjectsService) { }
+  constructor(private ProjectsService: ProjectsService, private router: Router) { }
 
   ngOnInit(): void {
     this.ProjectsService.getProjects().pipe(
@@ -30,6 +31,8 @@ export class ProjectsComponent implements OnInit {
 
   projectDetails(project: Project) {
     console.log(project);
+    //navicate to project details page
+    this.router.navigate(['/projects', project.id]);
   }
 
 }
